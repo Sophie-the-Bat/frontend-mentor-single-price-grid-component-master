@@ -1,0 +1,111 @@
+  @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-cyan: hsl(179, 62%, 43%);
+    --clr-bright-yellow: hsl(71, 73%, 54%);
+    --clr-light-gray: hsl(204, 43%, 93%);
+    --clr-grayish-blue: hsl(218, 22%, 67%);
+    --padding-section: 2.5rem;
+
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: var(--clr-light-gray);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: fit-content;
+    margin: 2rem auto;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0.5rem 0.25rem 1rem rgba(0 0 0 / 0.2);
+}
+
+@media (max-width: 500px){
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.community {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    background-color: white;
+    color: var(--clr-grayish-blue);
+    padding: var(--padding-section);
+    line-height: 2rem;
+}
+
+
+.subscription {
+    background-color: var(--clr-cyan);
+    color: white;
+    padding: var(--padding-section);
+}
+
+.subscription-payment {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.subscription-price {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.subscription-time {
+    padding-left: 1rem;
+    opacity: 0.8;
+}
+
+.subscription-button {
+    background-color: var(--clr-bright-yellow);
+    color: white;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border-style: none;
+    width: 100%;
+    margin-top: 2rem;
+    box-shadow: 0.5rem 0.25rem 1rem rgba(0 0 0 / 0.2);
+}
+
+.about {
+    background-color: var(--clr-cyan);
+    color: white;
+    padding: var(--padding-section);
+    opacity: 0.75;
+}
+
+.heading-main {
+    color: var(--clr-cyan);
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.heading-small {
+    font-size: 1.25rem;
+    padding-bottom: 1rem;
+}
+
+.font-clr-yellow-bold {
+    color: var(--clr-bright-yellow);
+    font-weight: 700;
+}
+
+.about-list {
+    list-style-type: none;
+    font-size: 0.85rem;
+    line-height: 1.5em;
+}
